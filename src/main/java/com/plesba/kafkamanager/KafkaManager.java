@@ -50,8 +50,8 @@ public class KafkaManager {
 
         kafkaMgrProps = new KMProperties(propertiesFile).getProp();
 
-        datasource = kafkaMgrProps.getProperty("km.datasource");
-        datatarget = kafkaMgrProps.getProperty("km.datatarget");
+        datasource = kafkaMgrProps.getProperty("km.infilename");
+        datatarget = kafkaMgrProps.getProperty("km.outfilename");
 
         LOG.info("KafkaManager datasource =  " + datasource);
         LOG.info("KafkaManager datatarget =  " + datatarget);
